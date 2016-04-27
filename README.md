@@ -10,3 +10,7 @@ This is an example of a modal email-form in Bootstrap.
   - It resets itself everytime the user sents a message or closes the modal
 
 I created it for my own website and works fine. Do not forget to setup your email address in the PHP file.
+
+Check it Live here:
+http://thanoswebdev.github.io/Bootstrap-Modal-as-a-mail-form/
+(GitHub pages do not support PHP, so it wont submit the form)
