@@ -1,0 +1,118 @@
+/* General styles*/
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    padding-top: 20px;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.strong {
+    font-weight: 700;
+}
+
+.blue-text {
+    color: #1C88AE;
+}
+
+.green-text {
+    color: #A4AA2E;
+}
+
+.myButton {
+    width: 250px;
+}
+
+
+/* Form classes */
+
+.input-error {
+    border-color: firebrick;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAQCAYAAAD52jQlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0QyOTQ2RkFFRDRDMTFFNTgwMjBCNDQzRDIxMUUzMTciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0QyOTQ2RjlFRDRDMTFFNTgwMjBCNDQzRDIxMUUzMTciIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiBNYWNpbnRvc2giPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0iRDQ2RUNBOTQ1MDFFRjQwREE3QkI4QzU3OEIxRDJFODciIHN0UmVmOmRvY3VtZW50SUQ9IkQ0NkVDQTk0NTAxRUY0MERBN0JCOEM1NzhCMUQyRTg3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+QWijkgAAAUpJREFUeNpifCuvwgAEJ4AYxPgMxJeA2J8BEyQCcR8QPwJiLSB2AuLDQg9uYyhkgtILgVgYiBWA2A+Iq9DUyQHxbCAWAGI9ID4OMpABB4AZOh2IFyOJtwKxOhJ/BhAzQ9nfcPgEw1AQyAfij0j8eVA6Bog9kcSzgPg9sYaCFGYg8a2gYYgcFBugQYUXMEIjChmsAeJgLGp/ALE8EL9CFsQXUcggFYi/YhHPQTeQGO8jB0MBmth+IJ7LQCRgwiHuiMY3BWIpSgxNB+IoNDEeIF5GrqFy0DQLAy+hEQQC9kBcTI6hM0EpAsr+Bc1ha5Dke4BYiRRDc4HYA4lfCHVlJRD/QRJfRKyhMkA8AUn8CBBPg7KfAHEJkpw11AEEDV2D5uokNHUTgfggEn8SEBvgMxQU0+ZA/AApGG5jUZsBTfxPoPw6aKmFAQACDACOBT2CmcFY8gAAAABJRU5ErkJggg==');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.input-correct {
+    border-color: forestgreen;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAQCAYAAADj5tSrAAAAAXNSR0IArs4c6QAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsTAAALEwEAmpwYAAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgpMwidZAAACyklEQVQ4EZ2Uu08UURTGv5nL7C4oiiEmGixINAGNlSYSEyOYKKiBhX2gFOo2Rv8BC+3orC1JlNjYSHgOT0mESi1AlBU1sTMxMbGwAXZ253E9587O7JgAbrzJ7py5c+f7zfnOuRf43yGhYeieoV6fy6Yxn53EdOqkuudnkSEicfUhiyx3CGRHHUxnLqNGf4KEOI+CdwK3WlfR8vVXVEyP3lQVB4BLyw4mU1dgYBjwjuO3VURjvAuGeBjqlDOqCSeqCaIAM9uJGJ5BymPYsi3UxxLYdvKwveehlAbJccW7l/2+dTdG3HBRNIgCZgkgKAMpm7BtFwkQJ7nPKMgcekdXyroKwBK+XYODOlicfyxWTjNkRAGTqasKAAXgDOLwsIEt544C+M0QAnyNIIO5TBfmSSAYDObBgKUO39apvmtYyP7AfEZiNFnAYr/Eq0weZvqMWrty1u82dVP58+0y+zqxLzaMohuD7eaQnJgDQ05t+M85QzNznWrwlKBHVQ0OxBPwZB6WsmgNQwS4v2pXpCuRRl82AE17DMdtVtMeftL1LrrHZlQG3EVmLwEMAkgfUE8AyYAS1WBqLVxX0f0rIku0Hhh6MyzPQ8m1KD5CBg1jJtUNBsxmegjARSaAQzVQgHXqJKoBATgDXrfHEEg2v4EmalEr2uCihiyzUGcchCvbMNDaSMBHEFpTaBHkB/oYymDiI7gGyZ0tijIFRr5tor1uEfUNOoR+AbpmwHKKZOFhxEU79X0DLLdEGVAXEYBrkBxbVxlUAWCYwCB1zoO3Dl58eY2Blk06Ii4SLEHiJTjUia50qE1jZNcaCnYOfeP5vYoczSCI/e7hNg424Uz6NjQ6i3R5CAW3iP0G74P3sJ0cusc//avIgfDOVwbJ8ubkYpvp71i6Kan73tHpelq9tMs+2Flwt1neG8HmnEr1EmABZv85H1A+1nd7d4/5PyI2Ll5/wp/MAAAAAElFTkSuQmCC');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+
+/* Footer section */
+
+footer {
+    width: 100%;
+    margin-top: 50px;
+    padding: 15px 5px 5px 55px;
+    height: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+
+/* Modal Form */
+
+#formModal .modal-body {
+    padding: 15px 45px 55px 45px;
+}
+
+#formModal .modal-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: white;
+}
+
+#formModal h2 {
+    margin-bottom: 25px;
+    font-weight: 200;
+}
+
+#formModal .modal-header {
+    background: #aaa;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#formModal .modal-body button {
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+
+#formModal .modal-header button {
+    color: white;
+    opacity: 0.7;
+    font-size: 1.8em;
+}
+
+#formModal .modal-header button:hover {
+    color: white;
+    opacity: 1;
+}
+
+#formModal .modal-content {
+    background: #eee;
+    border: 4px solid white;
+}
+
+
+/* Extra small devices (phones, less than 510px) */
+
+@media (max-width: 510px) {
+    #formModal .modal-body {
+        padding: 15px 25px 55px 25px;
+    }
+    #formModal .modal-dialog {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

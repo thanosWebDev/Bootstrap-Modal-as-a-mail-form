@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Modal email-form in Bootstrap">
+    <meta name="author" content="Thanos Doumanis">
+    <link rel="icon" href="#">
+
+    <title>Modal email-form in Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project Name</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+
+        <div class="jumbotron">
+            <h1>Modal Form Example</h1>
+            <p>This is an example of a modal email-form. It uses javascript for a quick client-side validation and php for server-side validation.<br>There is visual feedback and a simple antispam check. The form returns a success message when is sent and does not need page refresh.<br>It resets itself everytime the user sents a message or closes the modal.</p>
+            <p>
+                <a class="btn btn-lg btn-primary myButton" href="#" role="button" data-toggle="modal" data-target="#formModal">Call Modal-Form</a>
+            </p>
+        </div>
+        
+        <!-- Contact Modal -->
+            <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" id="cornerClose" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="formModalLabel">Mail Form</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <h2 class="lead"><strong class="green-text">Do you want to contact me?</strong><br>Please fill in the form below with your message.<br>I'll get back to you the soonest possible.</h2>
+
+                            <!--  Body form   -->
+                            <div id="body-form" class="contact-form">
+                                <form action="contact.php" method="post">
+
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control name" id="name" name="name" placeholder="Type your name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Type your email">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Write your message"></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="human">Prove me you are not a robot:</label>
+                                        <p class="strong blue-text">6 + 6 = ?</p>
+                                        <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button name="submit" type="submit" id="submit" class="btn btn-success">Send</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                            <!--  Body form    -->
+
+
+                            <!--  Body feedback    -->
+                            <div id="body-feedback" class="hidden">
+
+                                <h2 class="lead strong green-text">Thank you. The form was submited <strong> successfully!</strong></h2>
+                                <p class="strong">Just give me some time to check your message.
+                                    <br>You can now close the window.</p>
+
+                            </div>
+                            <!--  Body feedback    -->
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Modal end -->
+        
+         
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+
+    <footer>
+        <p><a href="http://www.doumanis.com">Thanos Doumanis</a> - Web Development &amp; Design - 2015</p>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.12.0.min.js "></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js "></script>
+    <!-- Send form script and validation -->
+    <script src="js/form.js"></script>
+
+
+    <script>
+        // Refresh form
+        $('.myButton').click(function () {
+            $('#body-feedback').addClass('hidden');
+            $('#body-form').show();
+            $('#name, #message, #human, #email').removeClass('input-correct input-error').val('');
+        });
+    </script>
+
+
+
+</body>
+
+</html>
