@@ -1,8 +1,9 @@
-# Bootstrap's Modal as a mail form
+# Bootstrap's Modal as a mail form - with Ajax
 
 This is an example of a modal email-form in Bootstrap.
 
   - It uses javascript for a quick client-side validation and php for server-side validation
+  - Uses AJAX to POST
   - There is visual feedback
   - A simple antispam check
   - The form returns a success message
